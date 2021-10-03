@@ -29,8 +29,7 @@ public class RomanNumeral {
             case 'C':  return 100;
             case 'D':  return 500;
             case 'M':  return 1000;
-            default:   throw new NumberFormatException(
-                    "Illegal character \"" + letter + "\" in Roman numeral");
+            default:   throw new NumberFormatException(letter + " is not in the list of Roman numerals");
         }
     }
 
